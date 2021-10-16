@@ -1,0 +1,52 @@
+::ng-deep :root{
+    --primaryTextColor: grey;
+    --p-o-t-color : #2296f9;
+
+    --activeStatus: #08BE22;
+    --occupiedStatus: #08BE22;
+    --vacantStatus: #D52B1E;
+    --inactiveStatus: #353435;
+    
+    --smallPadding: 6px;
+}
+
+table{
+    width: 100%;    
+
+    .active{
+        color: var(--activeStatus);
+    }
+    
+    .occupied{
+        color: var(--occupiedStatus);
+    }
+    
+    .vacant{
+        color: var(--vacantStatus);
+    }
+    
+    .inactive{
+        color: var(--inactiveStatus);
+    }
+
+    .proprty-owner-tenant{
+        color:var(--p-o-t-color);
+        text-decoration: underline;    
+    }
+}
+
+td.mat-cell, th.mat-header-cell{
+    padding-right: var(--smallPadding); 
+    color: var(--primaryTextColor);   
+}
+
+mat-progress-spinner{
+    margin: 0 auto;
+}
+
+.mat-paginator-container{
+    justify-content: center;
+}
+
+
+
